@@ -1,0 +1,34 @@
+# secrets
+.env
+.env.*
+!.env.example
+
+# customer data and customer photos: never commit (names, mobile numbers, faces)
+data/
+poc/faces/
+poc/out/
+
+# model weights (large, and some are research-licence only): fetch with poc/scripts/get_models.sh
+poc/models/
+
+# catalog images: re-download with poc/scripts/fetch_pids.py
+poc/pids/
+
+# local tooling, not part of the project
+.agent-audit/
+Agent Audit/
+.claude/
+.codex/
+.agents/
+CLAUDE.md
+AGENTS.md
+references/
+templates/
+showcase/
+showcase-site/.vercel/
+
+# python / os
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
