@@ -56,7 +56,6 @@ poc/scripts/
   get_models.sh        download the local face models
 showcase-site/         the Vercel showcase (static HTML + images)
 requirements.txt
-.env.example
 ```
 
 ## Setup
@@ -66,7 +65,7 @@ Python 3.11 or newer.
 ```bash
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-cp .env.example .env              # then put your fal.ai key in .env
+echo 'FAL_KEY=<your fal.ai key>' > .env   # git ignores .env
 bash poc/scripts/get_models.sh    # face models for QC (add WITH_FACESWAP=1 for the round-3 swapper)
 python3 poc/scripts/fetch_pids.py # catalog images for the six test PIDs
 ```

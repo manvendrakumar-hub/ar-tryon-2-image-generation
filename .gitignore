@@ -1,7 +1,6 @@
 # secrets
 .env
 .env.*
-!.env.example
 
 # customer data and customer photos: never commit (names, mobile numbers, faces)
 data/
